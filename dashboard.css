@@ -255,8 +255,6 @@ table#tabelalistaclientes {
     width: 120px;
 }
 
-td {}
-
 #sair {
     display: flex;
     margin-left: -10px;
