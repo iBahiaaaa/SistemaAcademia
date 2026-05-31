@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="shortcut icon" href="arquivos\imagens\favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="dashboard.css">
 </head>
+
 <body>
     <header>
         <section class="cabecalho">
@@ -50,6 +52,7 @@
                 <section id="card1">
                     <h1>Clientes</h1>
                     <div class="badges">
+                        <button class="blue" id="bluehover">Todos</button>
                         <button class="green" id="greenhover">Pagos</button>
                         <button class="yellow" id="yellowhover">Pendentes</button>
                         <button class="red" id="redhover">Inadimplentes</button>
@@ -60,10 +63,10 @@
                                 <thead>
                                     <tr>
                                         <th id="tabelaNomes">Aluno</th>
-                                        <th>Plano</th>
-                                        <th>Vencimento</th>
-                                        <th>Valor</th>
-                                        <th>Status</th>
+                                        <th id="tabelaPlano">Plano</th>
+                                        <th id="tabelaVencimento">Vencimento</th>
+                                        <th id="tabelaValor">Valor</th>
+                                        <th id="tabelaStatus">Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -206,9 +209,10 @@
                                         <td>20/09/2026</td>
                                         <td>R$350,00</td>
                                         <td><button class="green" id="greenhover">Pago</button></td>
-                                    </tr>                                </tbody>
+                                    </tr>
+                                </tbody>
                                 <tfoot>
-                                    
+
                                 </tfoot>
                             </table>
                         </div>
@@ -232,4 +236,5 @@
         </section>
     </footer>
 </body>
+
 </html>
