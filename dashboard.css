@@ -61,6 +61,16 @@ body{
     flex-direction: column;
 }
 
+.cardunico{
+    height: 50px;
+    width: 100%;
+
+    h1{
+        margin: 10px 0 0 10px;
+        text-decoration: underline var(--cor3);
+    }
+}
+
 #dashboard{
     background-color: var(--cor3);
 }
@@ -253,6 +263,18 @@ footer #rodape{
   background-color: rgba(34, 197, 94, 0.10);
   color: rgb(34 197 94);
   border: 1px rgb(34 197 94) solid;
+}
+
+#greenhover:hover{
+    background-color: rgba(34, 197, 94, 0.40);
+}
+
+#redhover:hover{
+  background-color: rgba(239, 68, 68, 0.40);
+}
+
+#yellowhover:hover{
+  background-color: rgba(234, 179, 8, 0.40);  
 }
 
 .badges .red {
