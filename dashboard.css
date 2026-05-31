@@ -94,10 +94,14 @@ body{
 #card11{
     width: 100%;
     height: 100%;
-    background-color: var(--cor2);
+    background-color: transparent;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    border-top: 1px solid rgba(0, 0, 0, 0.50);
+    padding: 10px;
+    margin-bottom: -40px;
+    margin-top: -15px;
+    display: flex;
+    height: 300px;
 }
 
 #alunosativos,
@@ -184,15 +188,44 @@ main #lateralesquerda img{
 }
 
 #listaclientes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     background-color: white;
-    height: 100%;
     width: 100%;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border: 11px solid var(--cor2);
+    overflow-y: auto;
+}
+
+table#tabelalistaclientes{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    td, tr, th{
+        border: 1px solid black;
+        padding: 2px;
+        color: black;
+        text-shadow: none;
+    }
+
+    thead{
+        background-color: var(--cor4);
+
+        th{
+            color: white;
+        }
+    }
+    
+    tbody{
+        tr:nth-child(odd){
+            background-color: var(--cor0);
+            
+            td{
+                color: white;
+            }
+        }
+    }
+}
+
+#tabelaNomes{
+    width: 300px;
 }
 
 #sair{
