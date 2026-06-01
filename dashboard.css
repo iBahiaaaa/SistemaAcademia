@@ -127,6 +127,30 @@ header .cabecalho {
     align-items: center;
 }
 
+#cabecaLogin {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+
+    img {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+#cabecaLogin:hover {
+    text-decoration: underline var(--cor3);
+}
+
+#cabecaLogin:hover #imgLoginArrow{
+    transform: rotate(180deg);
+}
+
+#imgLoginArrow{
+    transition: 0.3s;
+}
+
 header h1 {
     color: white;
     font-size: clamp(1.2rem, 3vw, 2rem);
@@ -209,6 +233,8 @@ table#tabelalistaclientes {
 
     thead {
         background-color: var(--cor4);
+        position: sticky;
+        top: -1px;
 
         th {
             color: white;
@@ -304,12 +330,13 @@ footer #rodape {
 .green {
     padding: 2px .5rem;
     border-radius: 0.375rem;
+    font-size: 0.8em;
 }
 
-td > .blue,
-td > .yellow,
-td > .red,
-td > .green {
+td>.blue,
+td>.yellow,
+td>.red,
+td>.green {
     width: 100px;
 }
 
