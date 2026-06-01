@@ -88,6 +88,10 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+
+    h1 {
+        margin-top: -2px;
+    }
 }
 
 
@@ -143,11 +147,11 @@ header .cabecalho {
     text-decoration: underline var(--cor3);
 }
 
-#cabecaLogin:hover #imgLoginArrow{
+#cabecaLogin:hover #imgLoginArrow {
     transform: rotate(180deg);
 }
 
-#imgLoginArrow{
+#imgLoginArrow {
     transition: 0.3s;
 }
 
@@ -258,6 +262,10 @@ table#tabelalistaclientes {
             }
         }
     }
+}
+
+#tabelaNomeAluno:hover {
+    text-decoration: underline var(--cor3);
 }
 
 #tabelaNomes {
